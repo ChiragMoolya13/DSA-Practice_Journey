@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Elseif {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int marks = sc.nextInt();
+        Scanner obj = new Scanner(System.in);
+        int marks = obj.nextInt();
         if(marks < 25){
             System.out.println("Grade: F");
         }
