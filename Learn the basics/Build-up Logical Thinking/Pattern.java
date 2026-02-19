@@ -91,7 +91,7 @@ public class Pattern{
         }
     }
     public static void print11(int n){
-        int start = 1;
+        int start;
         for(int i = 0;i<n;i++){
             if(i%2==0) start = 1;
             else start = 0;
