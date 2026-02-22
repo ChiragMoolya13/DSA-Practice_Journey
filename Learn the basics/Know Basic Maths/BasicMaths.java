@@ -89,7 +89,24 @@ public class BasicMaths {
         else{
             System.out.println("Not Prime Number");
         }
-    } 
+    }
+    public static void GcdHcf(int n1, int n2){
+        for(int i=Math.min(n1,n2);i>=1;i--){
+            if(n1%i==0 && n2%i==0){
+                System.out.println(i);
+                break;
+            }
+        }
+    }
+    public static void OptiGcdHcf(int a, int b){
+        while(a > 0 && b > 0){
+            if(a>b) a = a % b;
+            else b = b % a;
+        }
+        if(a==0) System.out.println(b);
+        else System.out.println(a);
+    }
+
     public static void main(String[] args) {
         // LastDigit(7789);
         // countDigit(87654);
@@ -105,6 +122,8 @@ public class BasicMaths {
             System.out.print(val + " ");
         }
         System.out.println();*/
-        primeNumber(12);
+        // primeNumber(12);
+        // GcdHcf(9, 12);
+        OptiGcdHcf(9, 12);
     }
 }
