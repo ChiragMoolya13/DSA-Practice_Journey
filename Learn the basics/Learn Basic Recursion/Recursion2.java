@@ -1,4 +1,5 @@
 public class Recursion2 {
+    // Finding Sum of the number
     public static void SumOfN(int i,int n){
         if(i<1){
             System.out.println(n);
@@ -6,12 +7,14 @@ public class Recursion2 {
         }
         SumOfN(i-1,n+i);
     }
+    // finding sum of the number in optimized way
     public static int optiSumOfN(int n){
         if(n == 0){
             return 0;
         }
         return n + optiSumOfN(n-1);
     }
+    // finding factorial of the number
     public static void FactofN(int i, int n){
         if(i<1){
             System.out.println(n);
@@ -19,6 +22,7 @@ public class Recursion2 {
         }
         FactofN(i-1, n*i);
     }
+    // finding factorial of the number in optimized way
     public static int optiFactOfN(int n){
         if(n == 1){
             return 1;
