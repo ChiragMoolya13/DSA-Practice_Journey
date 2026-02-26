@@ -30,8 +30,6 @@ public class BubbleSort {
         }
     }
 }
-
-
 /*
 Time complexity for bubble sort is 
 Best Case: o(n) if the given number is already sorted the second loop wont run
