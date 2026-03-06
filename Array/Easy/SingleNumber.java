@@ -1,6 +1,6 @@
 public class SingleNumber {
+    // Brute force approch
     public static int singleNum(int[] arr){
-      
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {
             int num = arr[i];
@@ -16,6 +16,7 @@ public class SingleNumber {
         }
         return ans;
     }
+    // Optimized approch using XOR operator
     public static int xor(int[] arr){
         int xor = 0;
         for (int i = 0; i < arr.length; i++) {
