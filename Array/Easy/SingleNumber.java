@@ -25,7 +25,7 @@ public class SingleNumber {
         return xor;
     }
     public static void main(String args[]){
-        int[] arr = {1,1,2,2,3,4,4}; 
+        int[] arr = {4,1,2,1,2}; 
         System.out.println(singleNum(arr));
     }
 }
